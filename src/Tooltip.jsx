@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Trigger from 'rc-trigger';
+import Trigger from 'rce-trigger';
 import { placements } from './placements';
 import Content from './Content';
 

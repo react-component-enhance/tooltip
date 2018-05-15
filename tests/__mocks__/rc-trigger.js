@@ -1,3 +1,3 @@
-import Trigger from 'rc-trigger/lib/mock';
+import Trigger from 'rce-trigger/lib/mock';
 
 export default Trigger;
