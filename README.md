@@ -1,4 +1,4 @@
-# rc-tooltip
+# rce-tooltip
 ---
 
 React Tooltip
@@ -10,18 +10,18 @@ React Tooltip
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: http://img.shields.io/npm/v/rc-tooltip.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/rc-tooltip
-[travis-image]: https://img.shields.io/travis/react-component/tooltip.svg?style=flat-square
-[travis-url]: https://travis-ci.org/react-component/tooltip
-[coveralls-image]: https://img.shields.io/coveralls/react-component/tooltip.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/react-component/tooltip?branch=master
-[gemnasium-image]: http://img.shields.io/gemnasium/react-component/tooltip.svg?style=flat-square
-[gemnasium-url]: https://gemnasium.com/react-component/tooltip
+[npm-image]: http://img.shields.io/npm/v/rce-tooltip.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/rce-tooltip
+[travis-image]: https://img.shields.io/travis/react-component-enhance/tooltip.svg?style=flat-square
+[travis-url]: https://travis-ci.org/react-component-enhance/tooltip
+[coveralls-image]: https://img.shields.io/coveralls/react-component-enhance/tooltip.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/react-component-enhance/tooltip?branch=master
+[gemnasium-image]: http://img.shields.io/gemnasium/react-component-enhance/tooltip.svg?style=flat-square
+[gemnasium-url]: https://gemnasium.com/react-component-enhance/tooltip
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/rc-tooltip.svg?style=flat-square
-[download-url]: https://npmjs.org/package/rc-tooltip
+[download-image]: https://img.shields.io/npm/dm/rce-tooltip.svg?style=flat-square
+[download-url]: https://npmjs.org/package/rce-tooltip
 
 ## Screenshot
 
@@ -36,18 +36,18 @@ React Tooltip
 
 ## Install
 
-[![rc-tooltip](https://nodei.co/npm/rc-tooltip.png)](https://npmjs.org/package/rc-tooltip)
+[![rce-tooltip](https://nodei.co/npm/rce-tooltip.png)](https://npmjs.org/package/rce-tooltip)
 
 ## Usage
 
 ```js
-var Tooltip = require('rc-tooltip');
+var Tooltip = require('rce-tooltip');
 var React = require('react');
 var ReactDOM = require('react-dom');
 
 // By default, the tooltip has no style.
 // Consider importing the stylesheet it comes with:
-// 'rc-tooltip/assets/bootstrap_white.css'
+// 'rce-tooltip/assets/bootstrap_white.css'
 
 ReactDOM.render(<Tooltip placement="left" trigger={['click']} overlay={<span>tooltip</span>}><a href='#'>hover</a></Tooltip>, container);
 ```
@@ -57,7 +57,7 @@ ReactDOM.render(<Tooltip placement="left" trigger={['click']} overlay={<span>too
 `npm start` and then go to
 [http://localhost:8007/examples](http://localhost:8007/examples)
 
-Online examples: [http://react-component.github.io/tooltip/examples/](http://react-component.github.io/tooltip/examples/)
+Online examples: [http://react-component-enhance.github.io/tooltip/examples/](http://react-component-enhance.github.io/tooltip/examples/)
 
 ## API
 
@@ -106,7 +106,7 @@ Online examples: [http://react-component.github.io/tooltip/examples/](http://rea
         <tr>
           <td>prefixCls</td>
           <td>String</td>
-          <td>rc-tooltip</td>
+          <td>rce-tooltip</td>
           <td>prefix class name</td>
         </tr>
         <tr>
@@ -230,4 +230,4 @@ npm run coverage
 
 ## License
 
-`rc-tooltip` is released under the MIT license.
+`rce-tooltip` is released under the MIT license.

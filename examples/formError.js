@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Tooltip from 'rc-tooltip';
+import Tooltip from 'rce-tooltip';
 
-import 'rc-tooltip/assets/bootstrap.less';
+import 'rce-tooltip/assets/bootstrap.less';
 
 class Test extends Component {
   state = {

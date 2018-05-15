@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Tooltip from 'rc-tooltip';
-import 'rc-tooltip/assets/bootstrap.less';
+import Tooltip from 'rce-tooltip';
+import 'rce-tooltip/assets/bootstrap.less';
 
 function preventDefault(e) {
   e.preventDefault();

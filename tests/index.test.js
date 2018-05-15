@@ -6,10 +6,10 @@ const verifyContent = (wrapper, content) => {
   expect(wrapper.find('.x-content').text()).toBe(content);
   expect(wrapper.instance().getPopupDomNode()).toBeTruthy();
   wrapper.find('.target').simulate('click');
-  expect(wrapper.find('.rc-tooltip').hostNodes().hasClass('rc-tooltip-hidden')).toBe(true);
+  expect(wrapper.find('.rce-tooltip').hostNodes().hasClass('rce-tooltip-hidden')).toBe(true);
 };
 
-describe('rc-tooltip', () => {
+describe('rce-tooltip', () => {
   describe('shows and hides itself on click', () => {
     it('using an element overlay', () => {
       const wrapper = mount(

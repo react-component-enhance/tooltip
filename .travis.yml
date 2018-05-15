@@ -4,21 +4,11 @@ sudo: false
 
 notifications:
   email:
-  - yiminghe@gmail.com
-  - hust2012jiangkai@gmail.com
+  - ZxBing0066@gmail.com
 
 node_js:
 - 6
 
-before_install:
-- |
-    if ! git diff --name-only $TRAVIS_COMMIT_RANGE | grep -qvE '(\.md$)|(^(docs|examples))/'
-    then
-      echo "Only docs were updated, stopping build process."
-      exit
-    fi
-    npm install npm@3.x -g
-    phantomjs --version
 script:
 - |
     if [ "$TEST_TYPE" = test ]; then
@@ -36,3 +26,16 @@ env:
 matrix:
   allow_failures:
   - env: "TEST_TYPE=saucelabs"
+
+before_deploy: "npm run compile"
+deploy:
+  - provider: npm
+    skip_cleanup: true
+    email: ZxBing0066@gmail.com
+    api_key:
+      secure: eK7lxtT+/X+ItO9HTckKc65q9rYDTaRIkEhbyKoupXAfi/wmwT8UyD9ue6eiUnaVlq5IJ/iJIy4Mz3YMQp2+egAqeQvENsxyRgO/h9Og+AJxzdJ305zgt8Xr+ENzNWT7Dw7svLbJqVarIAlthfK/uEcYo0zTS/sCpq6zcMk+Ggd98jlcFsFSda+pg6rlgVk99AbsEQz1UjQXrLaP9whggow976+fcf90xa4MCHUPW4zzEUBMRycScOywwOU44IlAqqbLB/QjDXgG7lCfUZtjEq/paX/QD7/7J7knTkGRSKPGnSohBStNZbdsXOkhb+8vtp2YjpLqvBdmcQ4uKj4Na6zZDe+n2ZLm3F9+Um0w5brY4tXMes7IIPY2zw3rGYXV7L2/hm2o83PrwhUZ3I6SvNWwrBzgOhVYAmtWTuBA1ntXvakwSuUygIuaGnzvk+f+uavy+IvfBUEYqUt/HpmpWNsEhqP+TE71bR1ZSvZ8wzzcQS6/UPBzrjsGxSOpj3sdtc1iWc+wRSJxUUjyth6XqQA9XOn0OQuHkTtLKuxnIieNKROtNNAVNYnjnApDzgiYcOcEKoiG52AXpAyp6i/Jf4keF1Q3oLUg/Q6jE6X2oSHDrLUjtFukvVqNsYB51G5yWO5RTwa48JZ+xV4oPR9tBVrwdI1lsxFK77mlOwwNCZk=
+    on:
+      tags: true
+      branch: master
+      tag: next
+      condition: "$TEST_TYPE = lint"

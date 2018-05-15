@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Tooltip from 'rc-tooltip';
-import 'rc-tooltip/assets/bootstrap.less';
+import Tooltip from 'rce-tooltip';
+import 'rce-tooltip/assets/bootstrap.less';
 
-// do not use rc-tooltip/lib/placements
-import placements from 'rc-tooltip/src/placements';
+// do not use rce-tooltip/lib/placements
+import placements from 'rce-tooltip/src/placements';
 
 class Test extends Component {
   state = {
@@ -80,10 +80,10 @@ class Test extends Component {
         &nbsp;&nbsp;&nbsp;&nbsp;
         <label>
           <input
-            value="rc-tooltip-zoom"
+            value="rce-tooltip-zoom"
             type="checkbox"
             onChange={this.onTransitionChange}
-            checked={this.state.transitionName === 'rc-tooltip-zoom'}
+            checked={this.state.transitionName === 'rce-tooltip-zoom'}
           />
           transitionName
         </label>

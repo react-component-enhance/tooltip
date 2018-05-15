@@ -35,7 +35,7 @@ class Tooltip extends Component {
   };
 
   static defaultProps = {
-    prefixCls: 'rc-tooltip',
+    prefixCls: 'rce-tooltip',
     mouseEnterDelay: 0,
     destroyTooltipOnHide: false,
     mouseLeaveDelay: 0.1,
